@@ -1,5 +1,4 @@
 <template>
-   <!-- <v-toolbar> -->
 
     <v-app-bar app color="#333545"> 
       <v-toolbar-title class="pl-2 font-weight-light space">
@@ -30,7 +29,6 @@
       </v-btn>
 
 
-      <!-- <v-row justify="center"> -->
     <v-dialog
       v-model="dialog"
       fullscreen
@@ -177,15 +175,7 @@
 
       </v-card>
     </v-dialog>
-  <!-- </v-row> -->
 
-
-
-
-
-      <!-- <v-btn icon>
-        <v-icon>mdi-cog-outline</v-icon>
-      </v-btn> -->
 
       <v-avatar 
         color="purple"
@@ -193,7 +183,6 @@
         <span class="white--text font-weight-light">KG</span>
       </v-avatar>
     </v-app-bar>   
-    <!-- </v-toolbar> -->
 </template>
 
 <script>
@@ -208,21 +197,6 @@ export default {
         widgets: false,
   }
 },
-computed: {
-    // ...mapState('custom', ['drawer']),
-
-    // toggleDrawer: {
-    //   get() {
-    //     this.drawer
-    //   },
-    //   set(newVal) {
-    //       this.$store.commit('custom/setDrawer', newVal)
-    //   }
-    // }
-},
-// methods: {
-//     ...mapMutations('custom', ['setDrawer'])
-//   }
 
 methods: {
   toggleTheme() {
