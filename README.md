@@ -1,6 +1,7 @@
 <p align="center">
-  ![RegionManagement-Frontend](demo/logo.png)
+  <img width="200" src="https://user-images.githubusercontent.com/57962280/231112575-2e479ac5-fe17-4034-b581-a14f7890852f.png" >
 </p>
+
 
 # Region Management - SalesCore
 
