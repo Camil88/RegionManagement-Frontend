@@ -28,7 +28,6 @@
 
         <v-col cols="10" class="d-inline-flex pl-0 py-0">
 
-          <!-- wybór daty odświeżenia danych -->
           <v-item-group class="d-inline-flex align-center ">
             <v-btn-toggle
             dense
@@ -49,13 +48,11 @@
                 Last month
               </v-btn>
             </v-btn-toggle>
-            <!-- <v-tabs grow>
               <v-tab class="fontW">Bieżący miesiąc</v-tab>
               <v-tab class="fontW">Bieżący tydzień</v-tab>
               <v-tab class="fontW">Wczoraj</v-tab>
               <v-tab class="fontW">Poprzedni miesiąc</v-tab>
             </v-tabs> -->
-            <!-- date picker -->
             <v-menu
               ref="menu"
               v-model="menu"
@@ -82,9 +79,6 @@
                 header-color="purple darken-1"                
               ></v-date-picker>
             </v-menu>
-            <!-- <div>
-              <p>Zakres dat:</p>
-            </div> -->
             <v-text-field
                 v-model="datesRangeText"
                 label="date range:"
@@ -94,8 +88,6 @@
             </v-text-field>
           </v-item-group>
         </v-col>
-        <!-- <v-col cols="2" class="d-inline-flex align-center">
-        </v-col> -->
       </v-row>
     </v-card>
   </v-container>
