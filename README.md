@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" src=""D:\SalesCore\salescore\src\assets\logo.png"" >
+  ![RegionManagement-Frontend](demo/logo.png)
 </p>
 
 # Region Management - SalesCore
