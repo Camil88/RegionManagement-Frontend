@@ -60,21 +60,7 @@
   </v-data-table>
   </v-card>
 
-
-  <!-- <div
-        v-for="item in allCommissions"
-        :key="item.customerFibu"
-        > 
-        {{ item.customerFibu }}
-        {{ item.commissionProcent }}
-        {{ item.commissionValue }}
-
-      </div> -->
-
 </template>
-
-
-
 
 
 
@@ -84,7 +70,6 @@ import { mapState, mapActions } from 'vuex';
   export default {
     data() {
       return {
-        // UWAGA: aby zaczytało do tabeli dane należy ustawić w headers wartość value= nazwie pola z API
         headers: [
           { text: 'Customer name', value: 'customer.contractorName', align: 'start'},
           { text: 'Customer Fibu', value: 'customerFibu'},
@@ -117,13 +102,6 @@ import { mapState, mapActions } from 'vuex';
         dialogDelete: false,
         editedIndex: -1,
         desserts:[]
-        //xx: true,
-        // snackbar: {
-        //   message: '',
-        //   type: error,
-        //   visible: false
-        // }
-
       }
 
     },
