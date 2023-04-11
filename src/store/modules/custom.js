@@ -2,7 +2,6 @@ import axios from "axios";
 
 
 const state = {
-    // toggleDrawer: true,
     allCommissions: [],
     allSalesPerformance: [],
     allCustomerAssignments: [],
@@ -15,12 +14,6 @@ const state = {
 };
 
 const mutations = {
-    //setDrawer: (state) => state.toggleDrawer = !state.toggleDrawer,
-    // setDrawer(state){
-    //     state.toggleDrawer = !state.toggleDrawer
-    //     state.miniDrawer = !state.miniDrawer
-    // }
-
     getAllCommissions: (state, commissions) => state.allCommissions = commissions, 
     getAllSalesPerformance: (state, performance) => state.allSalesPerformance = performance, 
     getAllCustomerAssignments: (state, custAssignments) => state.allCustomerAssignments = custAssignments, 
