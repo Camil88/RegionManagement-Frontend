@@ -24,7 +24,6 @@
     multi-sort
     :items-per-page="10">
 
-  <!-- <template #[`item.businessType`] = "{ item }"> -->
   <template v-slot:item.businessType="{ item }">
     <v-chip
       v-if="getChipColor(item.businessType)"
@@ -33,11 +32,6 @@
     </v-chip>
   </template>
 
-  <!-- <template v-slot:item.commissionValue="{ item }">
-    <div :style="getBelowZeroColor(item)">
-      {{ item.commissionValue }}
-    </div>
-  </template> -->
   <template v-slot:item.commissionValue="{ item }">
     <span :style="item.commissionValue < 0 ? 'color: red' : 'color: white'">
       {{ item.commissionValue }}
@@ -48,21 +42,7 @@
   </v-data-table>
   </v-card>
 
-
-  <!-- <div
-        v-for="item in allCommissions"
-        :key="item.customerFibu"
-        > 
-        {{ item.customerFibu }}
-        {{ item.commissionProcent }}
-        {{ item.commissionValue }}
-
-      </div> -->
-
 </template>
-
-
-
 
 
 
@@ -72,7 +52,6 @@ import { mapState, mapActions } from 'vuex';
   export default {
     data() {
       return {
-        // UWAGA: aby zaczytało do tabeli dane należy ustawić w headers wartość value= nazwie pola z API
         headers: [
           { text: 'Customer name', value: 'customerName', align: 'start'},
           { text: 'Customer Fibu', value: 'customerFibu'},
@@ -88,13 +67,6 @@ import { mapState, mapActions } from 'vuex';
 
         loading: true,
         search: ''
-        //xx: true,
-        // snackbar: {
-        //   message: '',
-        //   type: error,
-        //   visible: false
-        // }
-
       }
 
     },
@@ -123,7 +95,6 @@ import { mapState, mapActions } from 'vuex';
         console.log(error)
         this.loading = false       
       }
-      //this.getAllCommissionsAction()  
     }
   }
 
