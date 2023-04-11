@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="200" src=""D:\SalesCore\salescore\src\assets\logo.png"" >
+</p>
+
 # Region Management - SalesCore
 
 ## Description
@@ -28,3 +32,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Author
 Kamil Glowka
+
+GitHub: https://github.com/Camil88
