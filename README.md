@@ -1,7 +1,7 @@
 # Region Management - SalesCore
 
 ## Description
-This is the front-end application for Region Managament back-end, written in **Vue2.js**. The application is still under construction and need adjustments. However, a few funcionalities have been implemented (Customer Assignments, reports generator). 
+This is the front-end application for Region Managament back-end, written in **Vue2.js**. The application is still under construction and need adjustments. However, a few funcionalities have been implemented (Customer Assignments, reports generator). **SalesCore** is the official application name.
 
 ## Demo
 Here you can see first demo version of the application. Thanks to that you can have overall impression of the appearance and behaviour of the app.
