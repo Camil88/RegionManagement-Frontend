@@ -38,16 +38,12 @@
 
 
 
-
-
-
 <script>
 import { mapState } from 'vuex';
 
   export default {
     data() {
       return {
-        // UWAGA: aby zaczytało do tabeli dane należy ustawić w headers wartość value= nazwie pola z API
         headers: [
           { text: 'Customer name', value: 'contractorName', align: 'start'},
           { text: 'Customer Fibu', value: 'customerFibu'},
@@ -62,13 +58,6 @@ import { mapState } from 'vuex';
 
         loading: false,
         search: ''
-        //xx: true,
-        // snackbar: {
-        //   message: '',
-        //   type: error,
-        //   visible: false
-        // }
-
       }
 
     },
@@ -76,21 +65,7 @@ import { mapState } from 'vuex';
     computed: {
     ...mapState('custom', ['allSalesPerformance'])
     },
-  
-
-
-    // created() {
-    //   this.loading = true
-
-    //   try {
-    //     this.getAllSalesPerformanceAction('SFR')  
-    //     this.loading = false     
-    //   } catch (error) {
-    //     console.log(error)
-    //     this.loading = false       
-    //   }
-
-    // }
+    
   }
 
 </script>
