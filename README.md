@@ -6,6 +6,7 @@ This is the front-end application for Region Managament back-end, written in **V
 ## Demo
 Here you can see first demo version of the application. Thanks to that you can have overall impression of the appearance and behaviour of the app.
 
+![RegionManagement-Frontend](demo/SalesCore.gif)
 
 ## Project setup
 ```
