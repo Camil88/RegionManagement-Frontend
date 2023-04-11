@@ -8,8 +8,7 @@
     floating
     class=""
     >
-    <!-- :mini-variant.sync="toggleDrawer" -->
-    <!-- v-model="toggleDrawer"    -->
+
     <v-list
       dense
       class="py-0">
@@ -37,8 +36,6 @@
         </v-btn>
       </v-list-item>
     </v-list>
-
-    <!-- <v-divider></v-divider> -->
 
     <v-list
       nav 
@@ -309,7 +306,6 @@ export default {
       return {
         selectedItem: 0,
         mini: true,
-        //product: '',
 
         groupOverview: [
           { id: 1,  text: "Global", value: "", icon: "mdi-sigma"},
@@ -338,14 +334,6 @@ export default {
           { id: 2.3, text: "Full Load Domestic",  value: "DTF" },
           { id: 2.4, text: "Full Load Intl.", value: "ITF" },          
         ],
-        // subgroupAFRSales: [    
-        //   { id: 2.5, text: "Inside", value: "AFR" },
-        //   { id: 2.6, text: "Outside", value: "AFR" },      
-        // ],
-        // subgroupSFRSales: [
-        //   { id: 2.5, text: "Inside", value: "SFR" },
-        //   { id: 2.6, text: "Outside", value: "SFR" },      
-        // ],
         itemsSales: [
           { id: 2.7, text: "Rev & GP", icon: "mdi-chart-timeline-variant-shimmer", route: '/revgp' },
           { id: 2.8, text: "Stats", icon: "mdi-calculator-variant-outline", route: '/stats'  }
@@ -371,33 +359,11 @@ methods: {
   ...mapMutations('custom', ['setTopCardTitle']),
 
   setProductName(value) {
-    //this.product = value
-    //this.$store.dispatch('custom/getAllSalesPerformanceAction', value)
     this.setTopCardTitle(value)
     this.getAllSalesPerformanceAction(value)
   },
 
 },
-
-// Zdaje się, że gdy wywołujemy jakieś action w created/mounted to nie możemy potem dynamicznie zmieniać parametru. Musimy na wejściu
-// podać jakiś domyślny dlatego, że ten life cycle wykonuje się zanim zostanie wykonnay właściwy kod Vue (np. w methods czy computed). Jeśli
-// nie podamy tutaj nic na początku to przekazanie argumentu nic nie da. Created wykonał sie bowiem zanim został wykonany kod. Jeśli chcemy
-// dynamicznie przekazywać parametr to należy użyć methods. Created/mounted używac wtedy, gdy nie chcemy dynamicznie przekazywac parametrów.
-// Możemy tu wtedy użyć też opcji loading aby czekać na załadowanie danych (przykład w TableCustomerAssignments.vue, wyszarzony kod w created)
-// created() {
-//   this.getAllSalesPerformanceAction(this.product)
-// },
-
-// computed: {
-//     // toggleDrawer: {
-//     //     get() {
-//     //         return this.drawer
-//     //     },
-//     //     set(newVal) {
-//     //         this.$store.commit('custom/setDrawer', newVal)
-//     //     }
-//     // }
-// }
 
 }
 </script>
